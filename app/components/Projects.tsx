@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import Image from "next/image"; // Import Next.js Image for optimization
 
 // Projects Data
 const projects = [
@@ -11,15 +12,15 @@ const projects = [
       "A platform where users can buy, sell, and exchange vehicles seamlessly with real-time updates.",
     image: "/images/carxchange.png", // Ensure this image exists in public/images
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
-    github: "https://github.com/yourusername/carxchange", // Replace with your GitHub link
-    demo: "https://carxchange.com", // Replace with your live demo link
+    github: "https://github.com/Dhruvbarot1/carxchange", // Update with actual link
+    demo: "https://carxchange.com", // Update with actual demo link
   },
   {
     title: "Real-Time Chat App",
     description: "A real-time chat application using WebSockets, Node.js, and React.",
     image: "/images/chat-app.jpg", // Ensure this image exists
     technologies: ["React", "Node.js", "WebSockets", "MongoDB"],
-    github: "https://github.com/yourgithub/chat-app",
+    github: "https://github.com/Dhruvbarot1/chat-app",
     demo: "https://your-chatapp-demo.com",
   },
   {
@@ -27,7 +28,7 @@ const projects = [
     description: "An AI-driven blog content generator using OpenAI API and Next.js.",
     image: "/images/ai-blog.jpg", // Ensure this image exists
     technologies: ["Next.js", "OpenAI", "Tailwind CSS", "MongoDB"],
-    github: "https://github.com/yourgithub/ai-blog",
+    github: "https://github.com/Dhruvbarot1/ai-blog",
     demo: "https://your-aiblog-demo.com",
   },
   {
@@ -35,7 +36,7 @@ const projects = [
     description: "A full-stack expense tracker with authentication, charts, and financial insights.",
     image: "/images/expense-tracker.jpg", // Ensure this image exists
     technologies: ["React", "TypeScript", "Firebase", "Chart.js"],
-    github: "https://github.com/yourgithub/expense-tracker",
+    github: "https://github.com/Dhruvbarot1/expense-tracker",
     demo: "https://your-expensetracker-demo.com",
   },
 ];
@@ -54,12 +55,16 @@ export default function Projects() {
             whileHover={{ scale: 1.05 }}
             className="bg-gray-800 p-6 rounded-xl shadow-lg transition-all duration-300"
           >
-            {/* Project Image */}
-            <img
-              src={project.image}
-              alt={project.title}
-              className="rounded-lg w-full h-48 object-cover"
-            />
+            {/* Project Image - Using Next.js Optimized <Image /> */}
+            <div className="relative w-full h-48">
+              <Image
+                src={project.image}
+                alt={project.title}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            </div>
 
             {/* Project Title & Description */}
             <h3 className="text-xl font-semibold text-white mt-4">{project.title}</h3>

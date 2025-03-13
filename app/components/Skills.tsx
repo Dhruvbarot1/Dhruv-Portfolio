@@ -68,7 +68,7 @@ export default function Skills() {
 
       {/* Description */}
       <p className="text-center text-gray-400 mt-6">
-      I leverage my expertise in modern frontend frameworks, robust backend systems, creative design tools, and advanced DevOps practices to build scalable, high-performance web applications. My comprehensive skill set allows me to create seamless digital experiences tailored for today's dynamic web landscape.
+      I leverage my expertise in modern frontend frameworks, robust backend systems, creative design tools, and advanced DevOps practices to build scalable, high-performance web applications. My comprehensive skill set allows me to create seamless digital experiences tailored for today&apos;s dynamic web landscape.
       </p>
     </section>
   );

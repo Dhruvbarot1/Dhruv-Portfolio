@@ -11,7 +11,7 @@ export default function About() {
         {/* Text Section */}
         <div>
           <h2 className="text-5xl font-bold text-white">
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="bg-gradient-to-r from-purple-400 to-blue-500 text-transparent bg-clip-text">
               Dhruv Barot
             </span>

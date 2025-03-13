@@ -16,7 +16,7 @@ export default function PersonalData() {
             <FaFilePdf className="text-red-500" /> Resume
           </h3>
           <p className="mt-2 text-gray-400 italic">
-            "Your resume is the first impression make it powerful, make it memorable, make it YOU."
+          &quot;Your resume is the first impression make it powerful, make it memorable, make it YOU.&quot;
           </p>
           
           <div className="mt-4">
