@@ -9,7 +9,7 @@ const projects = [
   {
     title: "CarXchange - Vehicle Exchange Platform",
     description:
-      "An interactive platform for users to buy, sell, and exchange vehicles with real-time updates.",
+      "An interactive platform for users to buy, sell, and exchange vehicles with real-time updates. This is a group project where I have worked on Frontend.",
     image: "/carXchange.jpeg",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/Dhruvbarot1/carxchange",
@@ -48,7 +48,7 @@ const projects = [
       "An AI-based blog generator that creates high-quality articles using OpenAI API.",
     image: "/Blog.jpeg",
     technologies: ["Next.js", "OpenAI", "Tailwind CSS", "MongoDB"],
-    github: "https://github.com/Dhruvbarot1/ai-blog",
+    github: "https://github.com/Dhruvbarot1/AI-Blog-Generator.git",
     demo: "https://your-aiblog-demo.com",
   },
   {
@@ -57,7 +57,7 @@ const projects = [
       "A finance management tool with authentication, charts, and spending insights.",
     image: "/Expense Tracker.jpeg",
     technologies: ["React", "TypeScript", "Firebase", "Chart.js"],
-    github: "https://github.com/Dhruvbarot1/expense-tracker",
+    github: "https://github.com/Dhruvbarot1/Expense-Tracker.git",
     demo: "https://your-expensetracker-demo.com",
   },
 ];
