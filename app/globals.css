@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light & Dark Mode */
+:root {
+  --background: #ffffff;
+  --foreground: #0f0f0f;
+}
+
+.dark {
+  --background: #0f0f0f;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
