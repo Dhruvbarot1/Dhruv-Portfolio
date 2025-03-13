@@ -33,7 +33,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-3xl font-bold text-grey-400"
           >
-            🚀 I&apos;m a passionate frontend developer with expertise in building modern web and mobile applications.
+             I&apos;m a passionate frontend developer with expertise in building modern web and mobile applications.
           </motion.h2>
 
           <p className="text-gray-400 mt-4">

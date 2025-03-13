@@ -2,39 +2,60 @@
 
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import Image from "next/image"; // Import Next.js Image for optimization
+import Image from "next/image"; // Next.js optimized image
 
 // Projects Data
 const projects = [
   {
     title: "CarXchange - Vehicle Exchange Platform",
     description:
-      "A platform where users can buy, sell, and exchange vehicles seamlessly with real-time updates.",
-    image: "/images/carxchange.png", // Ensure this image exists in public/images
+      "An interactive platform for users to buy, sell, and exchange vehicles with real-time updates.",
+    image: "/carXchange.jpeg",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
-    github: "https://github.com/Dhruvbarot1/carxchange", // Update with actual link
-    demo: "https://carxchange.com", // Update with actual demo link
+    github: "https://github.com/Dhruvbarot1/carxchange",
+    demo: "https://carxchange.com",
+  },
+  {
+    title: "Survey on ChatGPT",
+    description:
+      "A data analysis project exploring ChatGPT usage in academia, leveraging Python and Pandas.",
+    image: "/Chatgpt.jpeg",
+    technologies: ["Python", "Pandas", "Data Visualization", "Google Forms"],
+    github: "https://github.com/Dhruvbarot1/chatgpt-survey",
+    demo: "https://your-chatgpt-survey-demo.com",
+  },
+  {
+    title: "Weather Forecast App",
+    description:
+      "A responsive weather forecast app powered by ReactJS and OpenWeatherMap API.",
+    image: "/Weather Forecast.jpeg",
+    technologies: ["React.js", "OpenWeatherMap API", "CSS", "JavaScript"],
+    github: "https://github.com/Dhruvbarot1/Weather-Forecast-App.git",
+    demo: "https://your-weatherapp-demo.com",
   },
   {
     title: "Real-Time Chat App",
-    description: "A real-time chat application using WebSockets, Node.js, and React.",
-    image: "/images/chat-app.jpg", // Ensure this image exists
+    description:
+      "A chat application with real-time messaging functionality, built with WebSockets and Node.js.",
+    image: "/ChatApp.jpeg",
     technologies: ["React", "Node.js", "WebSockets", "MongoDB"],
-    github: "https://github.com/Dhruvbarot1/chat-app",
+    github: "https://github.com/Dhruvbarot1/Real-Time-Chat-App.git",
     demo: "https://your-chatapp-demo.com",
   },
   {
     title: "AI-Powered Blog Generator",
-    description: "An AI-driven blog content generator using OpenAI API and Next.js.",
-    image: "/images/ai-blog.jpg", // Ensure this image exists
+    description:
+      "An AI-based blog generator that creates high-quality articles using OpenAI API.",
+    image: "/Blog.jpeg",
     technologies: ["Next.js", "OpenAI", "Tailwind CSS", "MongoDB"],
     github: "https://github.com/Dhruvbarot1/ai-blog",
     demo: "https://your-aiblog-demo.com",
   },
   {
     title: "Expense Tracker",
-    description: "A full-stack expense tracker with authentication, charts, and financial insights.",
-    image: "/images/expense-tracker.jpg", // Ensure this image exists
+    description:
+      "A finance management tool with authentication, charts, and spending insights.",
+    image: "/Expense Tracker.jpeg",
     technologies: ["React", "TypeScript", "Firebase", "Chart.js"],
     github: "https://github.com/Dhruvbarot1/expense-tracker",
     demo: "https://your-expensetracker-demo.com",
@@ -48,34 +69,36 @@ export default function Projects() {
         My <span className="text-white">Projects</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.05 }}
             className="bg-gray-800 p-6 rounded-xl shadow-lg transition-all duration-300"
           >
-            {/* Project Image - Using Next.js Optimized <Image /> */}
-            <div className="relative w-full h-48">
+            {/* Project Image - Keep Full Image but Make It Smaller */}
+            <div className="relative flex justify-center items-center overflow-hidden rounded-lg">
               <Image
                 src={project.image}
                 alt={project.title}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
+                width={320} // Reduced width
+                height={200} // Reduced height
+                className="rounded-lg object-contain" // Ensures full image is shown without cropping
               />
             </div>
 
             {/* Project Title & Description */}
             <h3 className="text-xl font-semibold text-white mt-4">{project.title}</h3>
-            <p className="mt-2 text-gray-400">{project.description}</p>
+            <p className="mt-2 text-gray-400 text-sm leading-relaxed">
+              {project.description}
+            </p>
 
             {/* Tech Stack Tags */}
             <div className="flex flex-wrap gap-2 mt-4">
               {project.technologies.map((tech, i) => (
                 <span
                   key={i}
-                  className="bg-gray-700 text-gray-300 text-sm px-3 py-1 rounded-full"
+                  className="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full"
                 >
                   {tech}
                 </span>
