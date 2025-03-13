@@ -8,7 +8,6 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects"; // Moved Projects Up
 import PersonalData from "./components/PersonalData"; // Added Personal Data
 import Contact from "./components/Contact";
-import { motion } from "framer-motion";
 
 export default function Home() {
   return (
