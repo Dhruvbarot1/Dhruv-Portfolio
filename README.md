@@ -2,6 +2,7 @@
 
 🌐 **Live Demo**: [Your Portfolio Link](https://dhruv-portfolio-68t7.vercel.app/)  
 📂 **Repository**: [GitHub Repo](https://github.com/Dhruvbarot1/Dhruv-Portfolio)  
+💼 **LinkedIn**: [Dhruv Barot](https://www.linkedin.com/in/dhruv-barot-b070a2266/)
 
 ---
 
@@ -30,3 +31,32 @@ This is my **personal portfolio website** showcasing my **skills, projects, expe
 ---
 
 ## 📁 **Project Structure**
+```sh
+📦 dhruv-portfolio
+│── 📂 app
+│   ├── 📂 components       # Reusable components
+│   │   ├── Navbar.tsx      # Navigation bar
+│   │   ├── Footer.tsx      # Footer section
+│   │   ├── Profile.tsx     # Profile (Hero) section
+│   │   ├── About.tsx       # About me section
+│   │   ├── Skills.tsx      # Skills section
+│   │   ├── Projects.tsx    # Projects showcase
+│   │   ├── Contact.tsx     # Contact section
+│   │   ├── PersonalData.tsx # Personal Data (Resume, Hobbies, Philosophy)
+│   │   ├── ThemeToggle.tsx # Dark/Light mode toggle
+│   ├── 📂 public           # Static assets (images, resume, etc.)
+│   ├── 📜 page.tsx         # Main homepage
+│   ├── 📜 layout.tsx       # Global layout wrapper
+│   ├── 📜 globals.css      # Global styles
+│── 📂 node_modules
+│── 📜 .gitignore
+│── 📜 README.md            # Project documentation
+│── 📜 package.json         # Project dependencies
+│── 📜 tsconfig.json        # TypeScript config
+│── 📜 next.config.js       # Next.js config
+ 
+📞 Contact Me
+📧 Email: barotdhruv05@gmail.com
+📞 Phone Number: +1(647)937-9205
+👨‍💻 GitHub: DhruvBarot1
+
