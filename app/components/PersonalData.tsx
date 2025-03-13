@@ -21,7 +21,7 @@ export default function PersonalData() {
           
           <div className="mt-4">
             <a
-              href="/resume.pdf"
+              href="/public/resume.pdf"
               download
               className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-blue-500 transition"
             >
